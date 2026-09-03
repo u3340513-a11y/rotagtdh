@@ -644,6 +644,52 @@ p{ margin:0 0 1em; }
 @media (max-width: 560px){ .pack-grid{ grid-template-columns: 1fr; } }
 
 /* =========================================================
+   SPECIES (Hedef Hayvan Grupları)
+   ========================================================= */
+.species-grid{
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 22px;
+}
+.species-item{
+  text-align:center;
+}
+.species-icon{
+  width: 100%;
+  max-width: 118px;
+  aspect-ratio: 1;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background:#fff;
+  border: 3px solid var(--c-border);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 22px;
+  transition: var(--transition);
+}
+.species-item:hover .species-icon{
+  border-color: var(--c-primary);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+.species-icon svg{ width: 100%; height:100%; color: var(--c-gray); transition: var(--transition); }
+.species-item:hover .species-icon svg{ color: var(--c-primary-dark); }
+.species-item span{
+  display:block;
+  font-family: var(--font-head);
+  font-weight:600;
+  font-size: 14px;
+  color: var(--c-ink);
+}
+/* Koyu zeminli varyant */
+.species-dark{ background: linear-gradient(150deg, #1f2a1a, var(--c-ink)); }
+.species-dark .species-icon{ background:#fff; border-color: rgba(255,255,255,.2); }
+.species-dark .species-item span{ color:#fff; }
+@media (max-width: 900px){ .species-grid{ grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 480px){ .species-grid{ grid-template-columns: repeat(2, 1fr); gap:18px; } }
+
+/* =========================================================
    STATS BAND
    ========================================================= */
 .stats-band{
