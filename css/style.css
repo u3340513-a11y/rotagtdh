@@ -432,10 +432,20 @@ p{ margin:0 0 1em; }
   flex-direction:column;
   justify-content:center;
 }
+.about-media .bg-photo{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:.4;
+}
 .about-media::before{
   content:"";
   position:absolute; inset:0;
-  background: radial-gradient(circle at 80% 10%, rgba(167,194,46,.28), transparent 55%);
+  background:
+    linear-gradient(160deg, rgba(31,32,26,.9), rgba(52,52,47,.75)),
+    radial-gradient(circle at 80% 10%, rgba(167,194,46,.35), transparent 55%);
 }
 .about-media .year{
   position:relative;
