@@ -101,7 +101,7 @@ p{ margin:0 0 1em; }
 .btn-primary{
   background: var(--c-primary);
   color:#1c2400;
-  box-shadow: 0 10px 24px rgba(167,194,46,.35);
+  box-shadow: 0 12px 36px rgba(167,194,46,.5);
 }
 .btn-primary:hover{ background: var(--c-primary-dark); transform: translateY(-2px); }
 .btn-outline{
@@ -254,6 +254,13 @@ p{ margin:0 0 1em; }
   .header-phone{ display:none; }
   .brand span{ display:none; }
   .nav-toggle{ display:flex; }
+  .header-inner{ position:relative; }
+  .header-actions .btn-primary{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+  }
 }
 @media (max-width: 560px){
   .header-actions{ gap:8px; }
