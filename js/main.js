@@ -129,6 +129,42 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Video Modal Oynatıcı
+  var videoCards = document.querySelectorAll('.video-card');
+  var videoModal = document.querySelector('.video-modal');
+  if (videoCards.length && videoModal) {
+    var modalVideo = videoModal.querySelector('video');
+    var modalSource = modalVideo.querySelector('source');
+
+    function openVideoModal(src) {
+      modalSource.setAttribute('src', src);
+      modalVideo.load();
+      videoModal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      modalVideo.play();
+    }
+    function closeVideoModal() {
+      modalVideo.pause();
+      modalVideo.removeAttribute('src');
+      modalSource.setAttribute('src', '');
+      videoModal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    videoCards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        openVideoModal(card.getAttribute('data-video'));
+      });
+    });
+    var videoCloseBtn = videoModal.querySelector('.lightbox-close');
+    if (videoCloseBtn) videoCloseBtn.addEventListener('click', closeVideoModal);
+    videoModal.addEventListener('click', function (e) {
+      if (e.target === videoModal) closeVideoModal();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (videoModal.classList.contains('is-open') && e.key === 'Escape') closeVideoModal();
+    });
+  }
+
   // İletişim formu (statik demo - gerçek gönderim için backend/e-posta servisi bağlanmalı)
   var contactForm = document.querySelector('#contact-form');
   if (contactForm) {
