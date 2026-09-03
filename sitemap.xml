@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.rotagth.com.tr/index.html</loc>
+    <loc>https://www.rotagth.com.tr/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.rotagth.com.tr/hakkimizda.html</loc>
+    <loc>https://www.rotagth.com.tr/hakkimizda</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rotagth.com.tr/urunler.html</loc>
+    <loc>https://www.rotagth.com.tr/urunler</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rotagth.com.tr/ihracat.html</loc>
+    <loc>https://www.rotagth.com.tr/ihracat</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rotagth.com.tr/iletisim.html</loc>
+    <loc>https://www.rotagth.com.tr/iletisim</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
