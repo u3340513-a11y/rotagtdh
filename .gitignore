@@ -2,3 +2,6 @@
 Thumbs.db
 *.log
 .vscode/
+
+# Web için optimize edilmemiş yüksek çözünürlüklü kaynak görseller
+img/galeri/

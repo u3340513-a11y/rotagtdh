@@ -79,6 +79,56 @@ document.addEventListener('DOMContentLoaded', function () {
     counters.forEach(function (el) { counterIo.observe(el); });
   }
 
+  // Galeri Lightbox
+  var galleryItems = document.querySelectorAll('.gallery-item');
+  var lightbox = document.querySelector('.lightbox');
+  if (galleryItems.length && lightbox) {
+    var lbImg = lightbox.querySelector('img');
+    var lbCaption = lightbox.querySelector('figcaption');
+    var items = Array.prototype.slice.call(galleryItems);
+    var current = 0;
+
+    function openLightbox(index) {
+      current = index;
+      var el = items[current];
+      lbImg.src = el.getAttribute('href');
+      lbImg.alt = el.querySelector('img').alt || '';
+      lbCaption.textContent = el.getAttribute('data-caption') || '';
+      lightbox.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+    function showRelative(step) {
+      current = (current + step + items.length) % items.length;
+      openLightbox(current);
+    }
+
+    items.forEach(function (el, index) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        openLightbox(index);
+      });
+    });
+    var closeBtn = lightbox.querySelector('.lightbox-close');
+    var prevBtn = lightbox.querySelector('.lightbox-nav.prev');
+    var nextBtn = lightbox.querySelector('.lightbox-nav.next');
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    if (prevBtn) prevBtn.addEventListener('click', function () { showRelative(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { showRelative(1); });
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') showRelative(1);
+      if (e.key === 'ArrowLeft') showRelative(-1);
+    });
+  }
+
   // İletişim formu (statik demo - gerçek gönderim için backend/e-posta servisi bağlanmalı)
   var contactForm = document.querySelector('#contact-form');
   if (contactForm) {
