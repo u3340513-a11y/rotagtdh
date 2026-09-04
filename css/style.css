@@ -1288,48 +1288,12 @@ p{ margin:0 0 1em; }
 @media (max-width: 768px){ .grid-2{ grid-template-columns:1fr; } }
 
 /* =========================================================
-   VIDEO BANNER (ambient, otomatik oynatılan arkaplan videosu)
-   ========================================================= */
-.video-banner{
-  position:relative;
-  min-height: 480px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-  border-radius: var(--radius-lg);
-}
-.video-banner video{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-.video-banner::before{
-  content:"";
-  position:absolute; inset:0;
-  background: linear-gradient(180deg, rgba(20,22,14,.55), rgba(20,22,14,.75));
-}
-.video-banner-content{
-  position:relative;
-  text-align:center;
-  color:#fff;
-  max-width: 640px;
-  padding: 0 24px;
-}
-.video-banner-content .eyebrow{ justify-content:center; color: var(--c-primary); }
-.video-banner-content h2{ color:#fff; font-size: clamp(26px,3.4vw,40px); }
-.video-banner-content p{ color: rgba(255,255,255,.8); font-size:16px; }
-@media (max-width: 640px){ .video-banner{ min-height: 360px; border-radius: var(--radius); } }
-
-/* =========================================================
    VIDEO GALLERY (tıklanınca modal oynatıcı açılan kartlar)
    ========================================================= */
 .video-grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 26px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
 }
 .video-card{
   position:relative;
@@ -1381,7 +1345,7 @@ p{ margin:0 0 1em; }
   color: rgba(255,255,255,.7);
   margin-top:2px;
 }
-@media (max-width: 900px){ .video-grid{ grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 1024px){ .video-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 560px){ .video-grid{ grid-template-columns: 1fr; } }
 
 /* Video modal oynatıcı */
