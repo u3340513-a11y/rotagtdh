@@ -721,6 +721,28 @@ p{ margin:0 0 1em; }
   margin-bottom: 10px;
 }
 .usage-box p{ font-size: 14.5px; margin-bottom: 8px; }
+.benefit-list{ margin: 14px 0; }
+.benefit-list li{
+  font-size: 14.5px;
+  color: var(--c-text);
+  padding-left: 18px;
+  position: relative;
+  margin-bottom: 6px;
+}
+.benefit-list li::before{
+  content: "•";
+  color: var(--c-primary-dark);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+.prop-line{
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--c-border);
+  font-size: 14px;
+}
+.prop-line strong{ color: var(--c-ink); }
 .nutri-table{
   border: 1px solid var(--c-border);
   border-radius: var(--radius);
