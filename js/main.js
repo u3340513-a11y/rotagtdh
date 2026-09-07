@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       var note = document.querySelector('#form-note');
       if (note) {
-        note.textContent = 'Mesajınız için teşekkür ederiz. En kısa sürede size dönüş yapacağız.';
+        note.textContent = contactForm.getAttribute('data-success-message') || 'Mesajınız için teşekkür ederiz. En kısa sürede size dönüş yapacağız.';
         note.style.display = 'block';
       }
       contactForm.reset();
