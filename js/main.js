@@ -13,6 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // Dil seçici (TR/EN/AR) açılır menü
+  var langDropdown = document.querySelector('.lang-dropdown');
+  var langToggle = document.querySelector('.lang-dropdown-toggle');
+  if (langDropdown && langToggle) {
+    langToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = langDropdown.classList.contains('is-open');
+      langDropdown.classList.toggle('is-open', !isOpen);
+      langToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+    document.addEventListener('click', function (e) {
+      if (!langDropdown.contains(e.target)) {
+        langDropdown.classList.remove('is-open');
+        langToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        langDropdown.classList.remove('is-open');
+        langToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   function closeNav() {
     if (navToggle) navToggle.classList.remove('is-active');
     if (navMain) navMain.classList.remove('is-open');

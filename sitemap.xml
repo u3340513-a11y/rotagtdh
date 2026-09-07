@@ -4,6 +4,7 @@
     <loc>https://www.rotagth.com.tr/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -12,6 +13,16 @@
     <loc>https://www.rotagth.com.tr/en/</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -20,6 +31,7 @@
     <loc>https://www.rotagth.com.tr/hakkimizda</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/hakkimizda"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/hakkimizda"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -28,6 +40,16 @@
     <loc>https://www.rotagth.com.tr/en/about</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/hakkimizda"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/hakkimizda"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/hakkimizda"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/about"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/hakkimizda"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -36,6 +58,7 @@
     <loc>https://www.rotagth.com.tr/urunler</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/urunler"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/products"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/products"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/urunler"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -44,6 +67,16 @@
     <loc>https://www.rotagth.com.tr/en/products</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/urunler"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/products"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/products"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/urunler"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/products</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/urunler"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/products"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/products"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/urunler"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -52,6 +85,7 @@
     <loc>https://www.rotagth.com.tr/ihracat</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/ihracat"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/export"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/export"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/ihracat"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -60,6 +94,16 @@
     <loc>https://www.rotagth.com.tr/en/export</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/ihracat"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/export"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/export"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/ihracat"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/export</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/ihracat"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/export"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/export"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/ihracat"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -68,6 +112,7 @@
     <loc>https://www.rotagth.com.tr/galeri</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/galeri"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/gallery"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/galeri"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,6 +121,16 @@
     <loc>https://www.rotagth.com.tr/en/gallery</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/galeri"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/gallery"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/galeri"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/galeri"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/gallery"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/gallery"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/galeri"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -84,6 +139,7 @@
     <loc>https://www.rotagth.com.tr/iletisim</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/iletisim"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/iletisim"/>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -92,6 +148,16 @@
     <loc>https://www.rotagth.com.tr/en/contact</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/iletisim"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/iletisim"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rotagth.com.tr/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/iletisim"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/contact"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/iletisim"/>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>

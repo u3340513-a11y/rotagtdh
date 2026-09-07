@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://www.rotagth.com.tr/en/about">
 <link rel="alternate" hreflang="tr" href="https://www.rotagth.com.tr/hakkimizda">
 <link rel="alternate" hreflang="en" href="https://www.rotagth.com.tr/en/about">
+<link rel="alternate" hreflang="ar" href="https://www.rotagth.com.tr/ar/about">
 <link rel="alternate" hreflang="x-default" href="https://www.rotagth.com.tr/hakkimizda">
 
 <meta property="og:type" content="website">
@@ -19,6 +20,7 @@
 <meta property="og:url" content="https://www.rotagth.com.tr/en/about">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="ar_SA">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" type="image/png" href="/img/rota_logo.png">
@@ -48,10 +50,17 @@
       <a href="/en/contact">Contact</a>
     </nav>
     <div class="header-actions">
-      <a href="/hakkimizda" class="lang-switch" hreflang="tr">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
-        <span>TR</span>
-      </a>
+      <div class="lang-dropdown">
+        <button type="button" class="lang-switch lang-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+          <span>EN</span>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="lang-dropdown-menu">
+          <a href="/hakkimizda" hreflang="tr">Türkçe</a>
+          <a href="/ar/about" hreflang="ar">العربية</a>
+        </div>
+      </div>
       <a href="tel:+905546186511" class="header-phone">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span>0554 618 65 11</span>
