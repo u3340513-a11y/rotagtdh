@@ -225,6 +225,41 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Ürün kategorileri: kart listesi <-> ürün detayı geçişi
+  // Gerçek ürün fotoğrafı dosya adları (img/urunler) marka adına göre eşleştirilir; TR/EN/AR ortak kullanır.
+  var productImageFiles = {
+    'morevita': 'morevita.png',
+    'morevita vita-vita': 'morevita vita-vita.png',
+    'morevita little': 'morevita little.png',
+    'morevita milky': 'morevita milky.png',
+    'morevita beefy': 'morevita beefy.png',
+    'morevita dry': 'morevita dry.png',
+    'morevita fresh': 'morevita fresh.png',
+    'morevita young': 'morevita young.png',
+    'morevita anti-fly': 'morevita anti-fly.png',
+    'general block': 'general block.png',
+    'junior block': 'junior block.png',
+    'natural block': 'natural block.png',
+    'pro block': 'pro block.png',
+    'maksimilk block': 'maksimilk block.png',
+    'salt block': 'salt block.png',
+    'rota gn 2000': 'rota gn 2000.png',
+    'rota gn pro': 'rota gn pro.png',
+    'rota min': 'rota min.png',
+    'rota sacc': 'rota sacc.png',
+    'rota broiler': 'rota broiler.png',
+    'rota buff': 'rota buff.png',
+    'rota eggy': 'rota eggy.png',
+    'rota gn 450': 'rota gn 450.png'
+  };
+
+  function resolveProductImage(name) {
+    // Arapça başlıklarda marka adı parantez içinde İngilizce olarak da geçer, örn: "موريفيتا (Morevita)"
+    var bracketMatch = name.match(/\(([^)]+)\)\s*$/);
+    var key = (bracketMatch ? bracketMatch[1] : name).trim().toLowerCase();
+    var file = productImageFiles[key];
+    return file ? '/img/urunler/' + file.replace(/ /g, '%20') : '';
+  }
+
   var productSections = document.querySelectorAll('[data-product-section]');
   productSections.forEach(function (section) {
     var thumbGrid = section.querySelector('.product-grid');
@@ -252,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!card.id) card.id = slugify(name);
       card.classList.add('is-hidden');
 
-      var imageUrl = card.getAttribute('data-image');
+      var imageUrl = card.getAttribute('data-image') || resolveProductImage(name);
 
       // Detay kartına ürün görseli / görsel yeri ekle
       var info = card.querySelector('.product-detail-info');
