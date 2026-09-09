@@ -62,7 +62,17 @@
     <nav class="nav-main" aria-label="Ana menü">
       <a href="/">Anasayfa</a>
       <a href="/hakkimizda">Hakkımızda</a>
-      <a href="/urunler">Ürünlerimiz</a>
+      <div class="nav-dropdown">
+        <a href="/urunler" class="nav-dropdown-toggle">Ürünlerimiz
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/urunler#toz-premiks">Toz Premiks</a>
+          <a href="/urunler#yalama-taslari">Yalama Taşları</a>
+          <a href="/urunler#yalama-kovalari">Yalama Kovaları</a>
+          <a href="/urunler#sivi-premiks">Sıvı Premiks</a>
+        </div>
+      </div>
       <a href="/ihracat">İhracat</a>
       <a href="/galeri">Galeri</a>
       <a href="/iletisim" class="active">İletişim</a>

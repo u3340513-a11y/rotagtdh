@@ -37,6 +37,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Ürünlerimiz menüsü altındaki kategori açılır menüsü
+  var navDropdown = document.querySelector('.nav-dropdown');
+  var navDropdownToggle = navDropdown ? navDropdown.querySelector('.nav-dropdown-toggle') : null;
+  if (navDropdown && navDropdownToggle) {
+    navDropdownToggle.addEventListener('click', function (e) {
+      if (window.innerWidth > 960) {
+        e.preventDefault();
+        var isOpen = navDropdown.classList.contains('is-open');
+        navDropdown.classList.toggle('is-open', !isOpen);
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (!navDropdown.contains(e.target)) {
+        navDropdown.classList.remove('is-open');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') navDropdown.classList.remove('is-open');
+    });
+  }
+
   function closeNav() {
     if (navToggle) navToggle.classList.remove('is-active');
     if (navMain) navMain.classList.remove('is-open');
@@ -202,6 +223,102 @@ document.addEventListener('DOMContentLoaded', function () {
       contactForm.reset();
     });
   }
+
+  // Ürün kategorileri: kart listesi <-> ürün detayı geçişi
+  var productSections = document.querySelectorAll('[data-product-section]');
+  productSections.forEach(function (section) {
+    var thumbGrid = section.querySelector('.product-grid');
+    var detailGrid = section.querySelector('.product-detail-grid');
+    var backBtn = section.querySelector('.back-to-list');
+    if (!thumbGrid || !detailGrid) return;
+
+    function slugify(text) {
+      return text
+        .toLowerCase()
+        .replace(/ı/g, 'i').replace(/ğ/g, 'g').replace(/ü/g, 'u')
+        .replace(/ş/g, 's').replace(/ö/g, 'o').replace(/ç/g, 'c')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-+|-+$)/g, '');
+    }
+
+    function placeholderMarkup() {
+      return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><small>Görsel Yakında</small>';
+    }
+
+    var cards = Array.prototype.slice.call(detailGrid.querySelectorAll('.product-detail-card'));
+    cards.forEach(function (card) {
+      var nameEl = card.querySelector('.product-detail-info h3');
+      var name = nameEl ? nameEl.textContent.trim() : 'Ürün';
+      if (!card.id) card.id = slugify(name);
+      card.classList.add('is-hidden');
+
+      var imageUrl = card.getAttribute('data-image');
+
+      // Detay kartına ürün görseli / görsel yeri ekle
+      var info = card.querySelector('.product-detail-info');
+      if (info && !info.querySelector('.product-detail-image')) {
+        var imgWrap = document.createElement('div');
+        imgWrap.className = 'product-detail-image';
+        if (imageUrl) {
+          imgWrap.style.backgroundImage = 'url(' + imageUrl + ')';
+        } else {
+          imgWrap.innerHTML = placeholderMarkup();
+        }
+        info.insertBefore(imgWrap, info.firstChild);
+      }
+
+      // Kart listesi görünümü için küçük ürün kartı oluştur
+      var thumb = document.createElement('a');
+      thumb.href = '#' + card.id;
+      thumb.className = 'product-card';
+      var media = document.createElement('div');
+      media.className = 'product-media';
+      if (imageUrl) {
+        media.style.backgroundImage = 'url(' + imageUrl + ')';
+        media.style.backgroundSize = 'cover';
+        media.style.backgroundPosition = 'center';
+      } else {
+        media.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>';
+      }
+      var body = document.createElement('div');
+      body.className = 'product-body';
+      body.innerHTML = '<h3>' + name + '</h3>';
+      thumb.appendChild(media);
+      thumb.appendChild(body);
+      thumbGrid.appendChild(thumb);
+
+      thumb.addEventListener('click', function (e) {
+        e.preventDefault();
+        showDetail(card.id);
+      });
+    });
+
+    function showDetail(id) {
+      thumbGrid.classList.add('is-hidden');
+      cards.forEach(function (c) { c.classList.toggle('is-hidden', c.id !== id); });
+      if (backBtn) backBtn.style.display = 'inline-flex';
+      var target = document.getElementById(id);
+      if (target) {
+        window.history.replaceState(null, '', '#' + id);
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function showList() {
+      thumbGrid.classList.remove('is-hidden');
+      cards.forEach(function (c) { c.classList.add('is-hidden'); });
+      if (backBtn) backBtn.style.display = 'none';
+      thumbGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    if (backBtn) backBtn.addEventListener('click', showList);
+
+    // Sayfa hash'i bu bölümdeki bir ürüne denk geliyorsa doğrudan detayı göster
+    var initialId = window.location.hash.replace('#', '');
+    if (initialId && cards.some(function (c) { return c.id === initialId; })) {
+      showDetail(initialId);
+    }
+  });
 
   // Aktif yıl
   var yearEl = document.querySelector('#current-year');

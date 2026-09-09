@@ -45,7 +45,17 @@
     <nav class="nav-main" aria-label="القائمة الرئيسية">
       <a href="/ar/">الرئيسية</a>
       <a href="/ar/about">من نحن</a>
-      <a href="/ar/products" class="active">منتجاتنا</a>
+      <div class="nav-dropdown">
+        <a href="/ar/products" class="nav-dropdown-toggle active">منتجاتنا
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/ar/products#powder-premix">بريميكس بودرة</a>
+          <a href="/ar/products#licking-blocks">كتل اللحس</a>
+          <a href="/ar/products#licking-buckets">دلاء اللحس</a>
+          <a href="/ar/products#liquid-premix">بريميكس سائل</a>
+        </div>
+      </div>
       <a href="/ar/export">التصدير</a>
       <a href="/ar/gallery">معرض الصور</a>
       <a href="/ar/contact">اتصل بنا</a>
@@ -206,7 +216,7 @@
         </div>
       </div>
 
-      <div class="category-card" data-reveal>
+      <div class="category-card" id="liquid-premix" data-reveal>
         <div class="category-head">
           <span class="num">04</span>
           <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg></i>
@@ -242,13 +252,16 @@
   </div>
 </section>
 
-<section class="section" id="licking-buckets">
+<section class="section" id="licking-buckets" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">دلاء اللحس</div>
       <h2>عائلة منتجات موريفيتا</h2>
-      <p>من خلال تشكيلة دلاء اللحس المصمَّمة خصيصًا، نلبّي احتياجات حيواناتكم من الطاقة والفيتامينات والمعادن.</p>
+      <p>من خلال تشكيلة دلاء اللحس المصمَّمة خصيصًا، نلبّي احتياجات حيواناتكم من الطاقة والفيتامينات والمعادن. انقر على البطاقة لعرض تفاصيل المنتج.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>العودة إلى كل المنتجات</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -603,13 +616,16 @@
   </div>
 </section>
 
-<section class="section" id="licking-blocks">
+<section class="section" id="licking-blocks" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">كتل اللحس</div>
       <h2>عائلة منتجات كتل اللحس</h2>
-      <p>من خلال تشكيلة كتل اللحس المقدَّمة بخيارات تعبئة مختلفة في صناديق، نلبّي احتياجات حيواناتكم من الملح والفيتامينات والمعادن.</p>
+      <p>من خلال تشكيلة كتل اللحس المقدَّمة بخيارات تعبئة مختلفة في صناديق، نلبّي احتياجات حيواناتكم من الملح والفيتامينات والمعادن. انقر على البطاقة لعرض تفاصيل المنتج.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>العودة إلى كل المنتجات</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -879,13 +895,16 @@
   </div>
 </section>
 
-<section class="section section-soft" id="powder-premix">
+<section class="section section-soft" id="powder-premix" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">بريميكس بودرة</div>
       <h2>عائلة منتجات روتا بريميكس</h2>
-      <p>من خلال تشكيلة بريميكس البودرة المقدَّمة بخيارات التعبئة في أكياس ودلاء، نلبّي احتياجات حيواناتكم من الفيتامينات والمعادن والطاقة.</p>
+      <p>من خلال تشكيلة بريميكس البودرة المقدَّمة بخيارات التعبئة في أكياس ودلاء، نلبّي احتياجات حيواناتكم من الفيتامينات والمعادن والطاقة. انقر على البطاقة لعرض تفاصيل المنتج.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>العودة إلى كل المنتجات</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>

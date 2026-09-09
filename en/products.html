@@ -44,7 +44,17 @@
     <nav class="nav-main" aria-label="Main menu">
       <a href="/en/">Home</a>
       <a href="/en/about">About Us</a>
-      <a href="/en/products" class="active">Products</a>
+      <div class="nav-dropdown">
+        <a href="/en/products" class="nav-dropdown-toggle active">Products
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/en/products#powder-premix">Powder Premix</a>
+          <a href="/en/products#licking-blocks">Licking Blocks</a>
+          <a href="/en/products#licking-buckets">Licking Buckets</a>
+          <a href="/en/products#liquid-premix">Liquid Premix</a>
+        </div>
+      </div>
       <a href="/en/export">Export</a>
       <a href="/en/gallery">Gallery</a>
       <a href="/en/contact">Contact</a>
@@ -205,7 +215,7 @@
         </div>
       </div>
 
-      <div class="category-card" data-reveal>
+      <div class="category-card" id="liquid-premix" data-reveal>
         <div class="category-head">
           <span class="num">04</span>
           <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg></i>
@@ -241,13 +251,16 @@
   </div>
 </section>
 
-<section class="section" id="licking-buckets">
+<section class="section" id="licking-buckets" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Licking Buckets</div>
       <h2>The Morevita Product Family</h2>
-      <p>With our range of licking buckets formulated for specific needs, we meet the energy, vitamin and mineral requirements of your animals.</p>
+      <p>With our range of licking buckets formulated for specific needs, we meet the energy, vitamin and mineral requirements of your animals. Click a card to see the product details.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Back to All Products</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -602,13 +615,16 @@
   </div>
 </section>
 
-<section class="section" id="licking-blocks">
+<section class="section" id="licking-blocks" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Licking Blocks</div>
       <h2>The Licking Block Product Family</h2>
-      <p>With our range of licking blocks offered in different box packaging options, we meet the salt, vitamin and mineral needs of your animals.</p>
+      <p>With our range of licking blocks offered in different box packaging options, we meet the salt, vitamin and mineral needs of your animals. Click a card to see the product details.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Back to All Products</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -878,13 +894,16 @@
   </div>
 </section>
 
-<section class="section section-soft" id="powder-premix">
+<section class="section section-soft" id="powder-premix" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Powder Premix</div>
       <h2>The Rota Premix Product Family</h2>
-      <p>With our powder premix range offered in bag and bucket packaging options, we meet the vitamin, mineral and energy needs of your animals.</p>
+      <p>With our powder premix range offered in bag and bucket packaging options, we meet the vitamin, mineral and energy needs of your animals. Click a card to see the product details.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Back to All Products</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>

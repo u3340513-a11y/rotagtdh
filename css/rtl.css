@@ -16,6 +16,7 @@ html[dir="rtl"] h4{
 
 /* Açılır dil menüsü Arapçada sağa değil karşı kenara hizalanır */
 html[dir="rtl"] .lang-dropdown-menu{ left:auto; right:0; }
+html[dir="rtl"] .nav-dropdown-menu{ left:auto; right:0; }
 
 /* Mobil menü, kapalıyken ekranın sağından değil solundan kaymalı */
 @media (max-width: 960px){

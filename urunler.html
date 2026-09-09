@@ -44,7 +44,17 @@
     <nav class="nav-main" aria-label="Ana menü">
       <a href="/">Anasayfa</a>
       <a href="/hakkimizda">Hakkımızda</a>
-      <a href="/urunler" class="active">Ürünlerimiz</a>
+      <div class="nav-dropdown">
+        <a href="/urunler" class="nav-dropdown-toggle active">Ürünlerimiz
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/urunler#toz-premiks">Toz Premiks</a>
+          <a href="/urunler#yalama-taslari">Yalama Taşları</a>
+          <a href="/urunler#yalama-kovalari">Yalama Kovaları</a>
+          <a href="/urunler#sivi-premiks">Sıvı Premiks</a>
+        </div>
+      </div>
       <a href="/ihracat">İhracat</a>
       <a href="/galeri">Galeri</a>
       <a href="/iletisim">İletişim</a>
@@ -205,7 +215,7 @@
         </div>
       </div>
 
-      <div class="category-card" data-reveal>
+      <div class="category-card" id="sivi-premiks" data-reveal>
         <div class="category-head">
           <span class="num">04</span>
           <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg></i>
@@ -241,13 +251,16 @@
   </div>
 </section>
 
-<section class="section" id="yalama-kovalari">
+<section class="section" id="yalama-kovalari" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Yalama Kovaları</div>
       <h2>Morevita Ürün Ailesi</h2>
-      <p>İhtiyaca özel formüle edilmiş yalama kovası çeşitlerimizle hayvanlarınızın enerji, vitamin ve mineral ihtiyacını karşılıyoruz.</p>
+      <p>İhtiyaca özel formüle edilmiş yalama kovası çeşitlerimizle hayvanlarınızın enerji, vitamin ve mineral ihtiyacını karşılıyoruz. Bir ürüne ait detayları görmek için kartına tıklayın.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Tüm Ürünlere Dön</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -602,13 +615,16 @@
   </div>
 </section>
 
-<section class="section" id="yalama-taslari">
+<section class="section" id="yalama-taslari" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Yalama Taşları</div>
       <h2>Licking Block Ürün Ailesi</h2>
-      <p>Kutu içerisinde farklı ambalaj seçenekleriyle sunulan yalama taşı çeşitlerimizle hayvanlarınızın tuz, vitamin ve mineral ihtiyacını karşılıyoruz.</p>
+      <p>Kutu içerisinde farklı ambalaj seçenekleriyle sunulan yalama taşı çeşitlerimizle hayvanlarınızın tuz, vitamin ve mineral ihtiyacını karşılıyoruz. Bir ürüne ait detayları görmek için kartına tıklayın.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Tüm Ürünlere Dön</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>
@@ -878,13 +894,16 @@
   </div>
 </section>
 
-<section class="section" id="toz-premiks">
+<section class="section" id="toz-premiks" data-product-section>
   <div class="container">
     <div class="section-head center" data-reveal>
       <div class="eyebrow" style="justify-content:center;">Toz Premiks</div>
       <h2>Rota Premiks Ürün Ailesi</h2>
-      <p>Torba ve kova ambalaj seçenekleriyle sunulan toz premiks çeşitlerimizle hayvanlarınızın vitamin, mineral ve enerji ihtiyacını karşılıyoruz.</p>
+      <p>Torba ve kova ambalaj seçenekleriyle sunulan toz premiks çeşitlerimizle hayvanlarınızın vitamin, mineral ve enerji ihtiyacını karşılıyoruz. Bir ürüne ait detayları görmek için kartına tıklayın.</p>
     </div>
+
+    <div class="product-grid" data-reveal></div>
+    <button type="button" class="back-to-list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m7-7l-7 7 7 7"/></svg>Tüm Ürünlere Dön</button>
 
     <div class="product-detail-grid">
       <div class="product-detail-card" data-reveal>

@@ -45,7 +45,17 @@
     <nav class="nav-main" aria-label="القائمة الرئيسية">
       <a href="/ar/">الرئيسية</a>
       <a href="/ar/about">من نحن</a>
-      <a href="/ar/products">منتجاتنا</a>
+      <div class="nav-dropdown">
+        <a href="/ar/products" class="nav-dropdown-toggle">منتجاتنا
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="/ar/products#powder-premix">بريميكس بودرة</a>
+          <a href="/ar/products#licking-blocks">كتل اللحس</a>
+          <a href="/ar/products#licking-buckets">دلاء اللحس</a>
+          <a href="/ar/products#liquid-premix">بريميكس سائل</a>
+        </div>
+      </div>
       <a href="/ar/export">التصدير</a>
       <a href="/ar/gallery" class="active">معرض الصور</a>
       <a href="/ar/contact">اتصل بنا</a>
