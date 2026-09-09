@@ -310,7 +310,8 @@ document.addEventListener('DOMContentLoaded', function () {
       media.className = 'product-media';
       if (imageUrl) {
         media.style.backgroundImage = 'url(' + imageUrl + ')';
-        media.style.backgroundSize = 'cover';
+        media.style.backgroundSize = 'contain';
+        media.style.backgroundRepeat = 'no-repeat';
         media.style.backgroundPosition = 'center';
       } else {
         media.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>';
