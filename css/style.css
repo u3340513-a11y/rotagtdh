@@ -663,13 +663,13 @@ section[id]{ scroll-margin-top: 110px; }
 }
 .product-card:hover{ box-shadow: var(--shadow-md); transform: translateY(-6px); }
 .product-media{
-  height: 190px;
+  aspect-ratio: 1 / 1;
   background-color:#fff;
   background-image: linear-gradient(140deg, var(--c-bg-alt), #fff);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 14px;
+  padding: 8px;
   display:flex; align-items:center; justify-content:center;
   position:relative;
 }
@@ -839,14 +839,14 @@ section[id]{ scroll-margin-top: 110px; }
 .product-detail-card.is-hidden{ display:none; }
 .product-detail-card[id]{ scroll-margin-top: 110px; }
 .product-detail-image{
-  height: 260px;
+  aspect-ratio: 1 / 1;
   border-radius: var(--radius);
   background-color:#fff;
   background-image: linear-gradient(140deg, var(--c-bg-alt), #fff);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 18px;
+  padding: 10px;
   display:flex;
   flex-direction:column;
   align-items:center;
